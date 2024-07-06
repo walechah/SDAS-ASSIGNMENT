@@ -3,17 +3,16 @@
   justify-content: center;
   align-items: center;
   padding: 2vh 2vw;
-
 }
 
 .card {
-  background-color : pink;
+  background-color: pink;
   border: 1px solid #555;
   border-radius: 12px;
   padding: 2vh 2vw;
   max-width: 40vw;
   text-align: left;
-  color: #00ffff; 
+  color: #00ffff;
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
   display: flex;
   justify-content: center;
@@ -39,4 +38,42 @@
 span {
   font-size: 1.8rem;
   color: #00ffff;
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 60vw;
+    padding: 3vh 4vw;
+  }
+
+  .card h2 {
+    font-size: 1.6rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+  }
+
+  span {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    max-width: 80vw;
+    padding: 4vh 6vw;
+  }
+
+  .card h2 {
+    font-size: 1.4rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+
+  span {
+    font-size: 1.4rem;
+  }
 }
